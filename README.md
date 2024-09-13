@@ -55,7 +55,7 @@ Inicialmente decidi como minha matriz seria implementada, então decidi trabalha
 <p align="justify">
 Inicialmente o programa executa o menu, que por sua vez solicita ao usuário o númerode geracões que serão geradas e arquivadas. Após isso criamos um objeto Matriz "m" para dar inicio as funções, sendo a primeira colocar dentro de uma das matrizes declaradas com vector a matriz do arquivo através da função "lerMatriz", a segunda permanece vazia para receber a primeira geração. Após isso também registramos a matriz do arquivo "input.mps" no arquivo "geracoes.mps".
 
-Depois disso iniciamos um for que irá percorrer o número de gerações solicitado, variando entre uma geração par no primeiro bloco IF, onde chama-se a função criarGeracao que recebe a "matriz1" (matriz lida do arquivo) e joga a nova geração para a segunda matriz, printando as mesmas para analise no terminal, registrando a "matriz2" (matriz ainda vazia) no arquivo, logo apos limpando a matriz1 para o ciclo. E o segundo bloco If, que é executado em gerações ímpares executa o mesmo processo, porém com a matriz2 agora funcionando como entrada e sendo limpada ao fim enquanto a matriz1 é registrada no arquivo, e repetindo o ciclo até o fim do for.
+Depois disso inicia-se um 'for' que irá percorrer o número de gerações solicitado, variando entre uma geração par no primeiro bloco 'if', onde chama-se a função "criarGeracao" que recebe a "matriz1" (matriz lida do arquivo) e joga a nova geração para a segunda matriz, printando as mesmas para analise no terminal, registrando a "matriz2" (matriz ainda vazia) no arquivo, e logo após limpando a matriz1 para o ciclo. E o segundo bloco 'If', que é executado em gerações ímpares executa o mesmo processo, porém com a matriz2 agora funcionando como entrada e sendo limpada ao fim enquanto a matriz1 é registrada no arquivo, e repetindo o ciclo até o fim do 'for'.
 
 A função "lerMatriz" utiliza da biblioteca fstream para ler do arquivo, retornando uma matriz de vetor de vetores de inteiros. No inicio do arquivo consta o tamanho da matriz quadrada, assim o programa lê o mesmo e ignora o proximo char (\n). Após isso o for do tamanho da matriz lê char por char e transforma o char em um inteiro através do codigo ASCII.
 
@@ -69,8 +69,7 @@ A função "registrarMatriz" abre o arquivo para escrita, utiliza de um for do t
 
 ## Casos de Teste
 <p align="justify">
-Agora indo para os casos de testes, iremos testar matrizes distintas com tamanhos distintos,variando entre uma de tamanho 6x6, outra 8x8 e por fim uma 10x10. 
-Tem-se a seguinte matriz de entrada com tamanho 6x6 que após 6 gerações deve estar:
+Agora indo para os casos de testes, iremos testar matrizes distintas com tamanhos distintos,variando entre uma de tamanho 6x6, outra 8x8 e por fim uma 10x10. Tem-se a seguinte matriz de entrada com tamanho 6x6 que após 6 gerações deve estar:
 <p align="center">
   <img src="figuras/CASO1ENTRADA.png" alt="Entrada do caso 1" style="float:right; max-width:45%;">
   <img src="figuras/CASO1SAIDA.png" alt="Saida esperada do caso 1" style="float:right; max-width:45%;">
